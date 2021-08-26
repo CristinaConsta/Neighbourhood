@@ -28,7 +28,7 @@
               </div>
             <div class="mb-3">
               <label for="passwordLogin" class="col-form-label">Password:</label>
-              <input id="passwordLogin" type="text" class="form-control" name="passwordLogin">
+              <input id="passwordLogin" type="password" class="form-control" name="passwordLogin">
               <% if (errors['password']) { %>         
                 <p style="color: red"><%= errors['password'].message %></p> 
                 <% } %>
@@ -37,7 +37,7 @@
               <small>Not signed up? <a role="button" class="link-primary" href="create-user">Sign up here!</a></small>
             </div>
             <hr>
-            <button id="cancel" type="reset" class="btn btn-danger" href="login-user">Cancel</button>
+            <a role="button" id="cancel" type="reset" class="btn btn-danger" href="/">Cancel</a>
             <button id="Login" class="btn btn-info">Login</button>
           </form>
         </div>

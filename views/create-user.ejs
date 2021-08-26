@@ -15,7 +15,7 @@
               <h5 class="modal-title text-white">Sign up</h5>
               <a href="/" class="close" data-dismiss="modal" aria-label="close">&times;</a>
             </div>
-            <div class="body">
+            <div class="modal-body">
               <form action="/create-user" method=POST>
                 <div class="mb-3">
                   <label for="username" class="col-form-label">Username:</label>
@@ -38,17 +38,14 @@
                     <p style="color: red"><%= errors['password'].message %></p> 
                     <% } %>
                 </div>
-              </div>
                 <div class="mb-3">
                   <small>Already signed up? <a role="button" class="link-primary" href="login-user">Login here!</a></small>
                 </div>
                 <hr>
-                <button type="button" class="btn btn-danger" href="create-user">Cancel</button>
+                <a role="button" id="cancel" type="reset" class="btn btn-danger" href="/">Cancel</a>
                 <button id="Register" class="btn btn-info">Register</button>
               </form>
             </div>
           </div>
         </div>
-
-
 </body>
