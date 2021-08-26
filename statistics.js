@@ -19,7 +19,7 @@ var randomDataPoint = function () { return Math.round(Math.random() * 100) };
 //Crimes by mounth
 
 //prepare the data from json
-let url1 = "http://localhost:2021/json2";
+let url1 = "/json2";
 var incidents = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //12 months
 
 fetch(url1)
@@ -110,7 +110,7 @@ fetch(url1)
 
 //Crimes by Borough
 
-let url3="http://localhost:2021/json3";
+let url3="/json3";
 var Boroughs=[];
 var incidentNo=[];
 var bgColors=[];
@@ -198,7 +198,7 @@ fetch(url3)
 	
 //  Crimes by type
 
-let url2="http://localhost:2021/json1";
+let url2="/json1";
 var crimeNames=[];
 var crimes=[];
 var bgColors=[];
@@ -270,7 +270,7 @@ var pieChartConfig = {
 
 //Crimes by City
 
-let url4="http://localhost:2021/json4";
+let url4="/json4";
 var cities=[];
 var incidentNumber=[];
 var bColors=[];
