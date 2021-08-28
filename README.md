@@ -5,7 +5,7 @@ This project is a proof-of-concept for an MVC web application, using MongoDB and
 ## Prerequisites
 
 Install Visual Studio Code - https://code.visualstudio.com/download
-Install node - https://nodejs.org/en/download/
+Install nodejs - https://nodejs.org/en/download/
 
 ### Getting started
 

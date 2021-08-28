@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const { WEB_PORT, MONGODB_URI } = process.env;
+const { PORT, MONGODB_URI } = process.env;
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true },  {autoIndex: false});
 mongoose.connection.on("error", (err) => {
   console.error(err);
@@ -112,6 +112,6 @@ app.get("/create-post", typeController.listType, isLoggedIn, renderData);
 app.post("/create-post", typeController.listType, postController.addPost);
 
 
-app.listen(WEB_PORT, () => {
-  console.log(`Example app listening at http://localhost:${WEB_PORT}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`);
 });
