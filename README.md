@@ -11,12 +11,16 @@ Install node - https://nodejs.org/en/download/
 
 Open Visual Studio Code
 Clone this repository using the command - git clone https://github.com/CristinaConsta/Neighbourhood.git
-Install the dependencies - npm install.
-
+Install the dependencies:
+ - npm install mongoose
+ - npm install express
+ 
 ### Test and run  - run remotely
 Access HTTPS://WARM-RETREAT-16015.HEROKUAPP.COM and test the project on Heroku.
 
 ### Development and test - run locally 
+
+In .env modify the variable PORT to WEB_PORT
 
 In app.js modify the variable PORT to WEB_PORT;
 

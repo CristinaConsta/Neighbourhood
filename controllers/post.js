@@ -192,7 +192,7 @@ exports.listPostById = async(req, res)=>{
 }
 
 // update Posts
-
+// from news:id
 exports.updatePost = async(req, res, next) =>{
   const id = req.params.id;
   const comment = req.body.comment;
@@ -222,11 +222,13 @@ exports.updatePost = async(req, res, next) =>{
   }
 };
 
+//from news
 exports.updatePosts = async(req, res, next) =>{
   const id = req.body.id;
   const comment = req.body.comment;
   const date = Date();                                           
   try {
+    if(user){
     console.log(id)
     console.log(comment)
     const post = await Post.updateOne({ _id: id },
@@ -239,14 +241,17 @@ exports.updatePosts = async(req, res, next) =>{
       }
       });    
       res.redirect("/")
-  } catch (e) {                                                     
+  }else{
+    res.redirect("/login-user/?message=Please login to post a comment")
+  } 
+}catch (e) {                                                     
     res.status(404).send({
       message: `could not find post ${id}.`,                          
     });
   }
 };
 
-// add Posts
+// create new Post
 
 exports.addPost = async (req, res, next) =>{
   const errors = req.errros;
