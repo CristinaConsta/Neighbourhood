@@ -89,7 +89,7 @@ exports.listTotalByMonth = async (req, res) =>{
     try {
     let postsByBorough = await Post.aggregate([
       {
-        $match: {"Borough":{$ne:null}}
+        $match: {"City": "London"}
       },
       {
        $group : {

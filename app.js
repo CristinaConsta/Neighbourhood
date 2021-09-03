@@ -86,10 +86,10 @@ app.post("/news", postController.updatePosts);
 app.get("/news-id/:id", postController.listPostById);
 app.post("/news-id/:id", postController.updatePost);
 
-app.get("/json1", postController.listTotalByType);
-app.get("/json2", postController.listTotalByMonth);
-app.get("/json3", postController.listTotalByBorough);
-app.get("/json4", postController.listTotalByCity);
+app.get("/json_types", postController.listTotalByType);
+app.get("/json_month", postController.listTotalByMonth);
+app.get("/json_borough", postController.listTotalByBorough);
+app.get("/json_city", postController.listTotalByCity);
 app.get("/statistics", renderStatistics);
 
 app.get("/create-user", (req, res) =>{

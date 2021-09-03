@@ -19,10 +19,10 @@ var randomDataPoint = function () { return Math.round(Math.random() * 100) };
 //Crimes by mounth
 
 //prepare the data from json
-let url1 = "/json2";
+let url_month = "/json_month";
 var incidents = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //12 months
 
-fetch(url1)
+fetch(url_month)
     .then(res => res.json())
     .then(out1 => {
         for (var i = 0; i < out1.length; i++) {
@@ -110,12 +110,12 @@ fetch(url1)
 
 //Crimes by Borough
 
-let url3="/json3";
+let url_borough="/json_borough";
 var Boroughs=[];
 var incidentNo=[];
 var bgColors=[];
 
-fetch(url3)
+fetch(url_borough)
 	.then(res => res.json())
 	.then(out3 => {
 		for (var i = 0; i < out3.length; i++) {
@@ -198,12 +198,12 @@ fetch(url3)
 	
 //  Crimes by type
 
-let url2="/json1";
+let url_types="/json_types";
 var crimeNames=[];
 var crimes=[];
 var bgColors=[];
 
-fetch(url2)
+fetch(url_types)
 	.then(res => res.json())
 	.then(out2 => {
 		for (var i = 0; i < out2.length; i++) {
@@ -270,12 +270,12 @@ var pieChartConfig = {
 
 //Crimes by City
 
-let url4="/json4";
+let url_city="/json_city";
 var cities=[];
 var incidentNumber=[];
 var bColors=[];
 
-fetch(url4)
+fetch(url_city)
 	.then(res => res.json())
 	.then(out4 => {
 		for (var i = 0; i < out4.length; i++) {
