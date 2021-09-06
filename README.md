@@ -12,8 +12,8 @@ Install nodejs - https://nodejs.org/en/download/
 Open Visual Studio Code.
 Clone this repository using the command - git clone https://github.com/CristinaConsta/Neighbourhood.git
 Install the dependencies:
- - npm install mongoose (the ORM used for interaction with MongoDB database)
- - npm install express (the NodeJs framework I have used)
+ - npm install mongoose (the ORM used for interaction with MongoDB database) https://mongoosejs.com/docs/
+ - npm install express (the NodeJs framework I have used) https://expressjs.com/
  
 ### Test and run  - run remotely
 
