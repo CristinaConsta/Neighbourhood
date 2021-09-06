@@ -101,6 +101,9 @@ app.get("/login-user", (req, res) =>{
   res.render("login-user", {errors: {}});
 });
 app.post("/login-user", userController.login);
+app.get("/login-user/create-user", (req, res) =>{
+  res.render("create-user", {errors: {}});
+});
 
 app.get("/logout", async (req, res) => {
   req.session.destroy();
