@@ -12,12 +12,12 @@ Install nodejs - https://nodejs.org/en/download/
 Open Visual Studio Code.
 Clone this repository using the command - git clone https://github.com/CristinaConsta/Neighbourhood.git
 Install the dependencies:
- - npm install mongoose (the ORM used for interaction with MongoDB database) https://mongoosejs.com/docs/
- - npm install express (the NodeJs framework I have used) https://expressjs.com/
+ - npm install mongoose (the ORM used for interaction with MongoDB database). For additional information please follow the link: https://mongoosejs.com/docs/
+ - npm install express (the NodeJs framework I have used). For additional information please follow the link: https://expressjs.com/
  
 ### Test and run  - run remotely
 
-Access HTTPS://WARM-RETREAT-16015.HEROKUAPP.COM and test the project on Heroku.
+Access HTTPS://WARM-RETREAT-16015.HEROKUAPP.COM and test the project on Heroku platform, where is hosted.
 
 ### Development and test - run locally 
 
